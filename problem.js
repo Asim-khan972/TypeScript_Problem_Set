@@ -1,15 +1,14 @@
-console.log("problem-12");
-//Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements
-//  about these items, such as “I would like to own a Honda motorcycle.”
-// Array of favorite cars
-var favoriteCars = [
-    "Tesla Model S",
-    "Porsche 911",
-    "Audi R8",
-    "BMW M3",
-    "Mercedes-Benz AMG GT",
+console.log("problem-14");
+// Guest List: If you could invite anyone, living or deceased, to dinner, 
+// who would you invite? Make a list that includes at least three people you’d like to invite to dinner. 
+// Then use your list to print a message to each person, inviting them to dinner.
+// Array of people to invite to dinner
+var guestList = [
+    "Awais",
+    "Juniad",
+    "Nora Fatihe",
 ];
-// Print statements about each car
-favoriteCars.forEach(function (car) {
-    console.log("I would like to own a ".concat(car, "."));
+// Print invitations to each person
+guestList.forEach(function (person) {
+    console.log("Dear ".concat(person, ",\nYou are invited to join us for dinner. The dinner will be a delightful gathering, and we would be honored to have your presence.\nLooking forward to\n   meeting you!\n\nBest regards,\n Asim khan"));
 });
