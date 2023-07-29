@@ -1,26 +1,9 @@
 
-let PersonName = "asim khan";
+console.log(`problem-4`)
+// Famous Quote: Find a quote from a famous person you admire. Print the quote and the name 
+// of its author. Your output should look something like the following, including the quotation marks:
+
+// Albert Einstein once said, “A person who never made a mistake never tried anything new.”
 
 
-
-console.log(`problem-3`)
-
-// Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
-
-console.log("Upper Case :   "+PersonName.toUpperCase());
-
-console.log("Lower Case :   "+PersonName.toLowerCase());
-
-
-function titleCase(str) {
-  return str.toLowerCase().split(' ').map(function(word) {
-    return (word.charAt(0).toUpperCase() + word.slice(1));
-  }).join(' ');
-}
-
-console.log("Title Case : "+titleCase(PersonName));
-
-
-
-
-
+console.log(` Albert Einstein once said, “A person who never made a mistake never tried anything new.”`)
