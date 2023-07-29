@@ -1,15 +1,22 @@
-console.log("problem-21");
-// Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
-// • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
-// • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
-// Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
-var alien_color = 'green';
-if (alien_color === 'green') {
-    console.log("5 points");
+console.log("problem-23");
+// Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+// • Make a array of your three favorite fruits and call it favorite_fruits.
+// • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
+// Array of my three favorite fruits
+var favorite_fruits = ['apple', 'banana', 'mango'];
+// If statements to check for certain fruits in the array
+if (favorite_fruits.includes('apple')) {
+    console.log("You really like apples!");
 }
-else if (alien_color === 'red') {
-    console.log("10 points");
+if (favorite_fruits.includes('banana')) {
+    console.log("You really like bananas!");
 }
-else {
-    console.log("20 points ");
+if (favorite_fruits.includes('orange')) {
+    console.log("You really like oranges!");
+}
+if (favorite_fruits.includes('mango')) {
+    console.log("You really like mangoes!");
+}
+if (favorite_fruits.includes('grape')) {
+    console.log("You really like grapes!");
 }
