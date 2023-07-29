@@ -1,36 +1,42 @@
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
-console.log("problem-19");
-// Seeing the World: Think of at least five places in the world you’d like to visit.
-// • Store the locations in a array. Make sure the array is not in alphabetical order.
-// • Print your array in its original order.
-// • Print your array in alphabetical order without modifying the actual list.
-// • Show that your array is still in its original order by printing it.
-// • Print your array in reverse alphabetical order without changing the order of the original list.
-// • Show that your array is still in its original order by printing it again.
-// • Reverse the order of your list. Print the array to show that its order has changed.
-// • Reverse the order of your list again. Print the list to show it’s back to its original order.
-// • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
-// • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
-var placesToVisit = [
-    "Tokyo",
-    "Rome",
-    "Bora Bora",
-    "New York",
-    "Machu Picchu",
-];
-// Print the array in its original order
-console.log("Original order:", placesToVisit);
-var SortedArray = __spreadArray([], placesToVisit, true).sort();
-console.log("Original order:", placesToVisit);
-console.log("Sorted Array order:", SortedArray);
-var SorrtedReverseArray = __spreadArray([], SortedArray, true).reverse();
-console.log("Reverse order:", SorrtedReverseArray);
-console.log("Sorted Array order:", SortedArray);
+console.log("problem-20");
+// Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+// let car = 'subaru';
+// console.log("Is car == 'subaru'? I predict True.")
+// console.log(car == 'subaru')
+// • Look closely at your results, and make sure you understand why each line evaluates to True or False.
+// • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+var car = 'subaru';
+var age = 25;
+var temperature = 20;
+var isRaining = true;
+var fruits = ['apple', 'banana', 'orange'];
+// Test 1: Check if the car is 'subaru'
+console.log("Is car == 'subaru'? I predict True.");
+console.log(car == 'subaru');
+// Test 2: Check if the age is greater than or equal to 18
+console.log("Is age >= 18? I predict True.");
+console.log(age >= 18);
+// Test 3: Check if the temperature is less than 30 degrees Celsius
+console.log("Is temperature < 30? I predict True.");
+console.log(temperature < 30);
+// Test 4: Check if it's raining
+console.log("Is it raining? I predict True.");
+console.log(isRaining);
+// Test 5: Check if 'apple' is in the fruits array
+console.log("Is 'apple' in the fruits array? I predict True.");
+console.log(fruits.includes('apple'));
+// Test 6: Check if the car is 'honda'
+console.log("Is car == 'honda'? I predict False.");
+console.log(car == 'honda');
+// Test 7: Check if the age is less than 21
+console.log("Is age < 21? I predict False.");
+console.log(age < 21);
+// Test 8: Check if the temperature is greater than or equal to 25 degrees Celsius
+console.log("Is temperature >= 25? I predict False.");
+console.log(temperature >= 25);
+// Test 9: Check if it's snowing
+console.log("Is it snowing? I predict False.");
+console.log(isRaining);
+// Test 10: Check if 'grape' is in the fruits array
+console.log("Is 'grape' in the fruits array? I predict False.");
+console.log(fruits.includes('grape'));
