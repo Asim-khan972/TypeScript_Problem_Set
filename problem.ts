@@ -1,50 +1,50 @@
 
-console.log(`problem-19`)
-// Seeing the World: Think of at least five places in the world you’d like to visit.
-// • Store the locations in a array. Make sure the array is not in alphabetical order.
+console.log(`problem-20`)
+// 
 
-// • Print your array in its original order.
+let car = 'subaru';
+let age = 25;
+let temperature = 20;
+let isRaining = true;
+let fruits = ['apple', 'banana', 'orange'];
 
-// • Print your array in alphabetical order without modifying the actual list.
+// Test 1: Check if the car is 'subaru'
+console.log("Is car == 'subaru'? I predict True.");
+console.log(car == 'subaru');
 
-// • Show that your array is still in its original order by printing it.
+// Test 2: Check if the age is greater than or equal to 18
+console.log("Is age >= 18? I predict True.");
+console.log(age >= 18);
 
-// • Print your array in reverse alphabetical order without changing the order of the original list.
+// Test 3: Check if the temperature is less than 30 degrees Celsius
+console.log("Is temperature < 30? I predict True.");
+console.log(temperature < 30);
 
-// • Show that your array is still in its original order by printing it again.
+// Test 4: Check if it's raining
+console.log("Is it raining? I predict True.");
+console.log(isRaining);
 
-// • Reverse the order of your list. Print the array to show that its order has changed.
+// Test 5: Check if 'apple' is in the fruits array
+console.log("Is 'apple' in the fruits array? I predict True.");
+console.log(fruits.includes('apple'));
 
-// • Reverse the order of your list again. Print the list to show it’s back to its original order.
+// Test 6: Check if the car is 'honda'
+console.log("Is car == 'honda'? I predict False.");
+console.log(car == 'honda');
 
-// • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+// Test 7: Check if the age is less than 21
+console.log("Is age < 21? I predict False.");
+console.log(age < 21);
 
-// • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+// Test 8: Check if the temperature is greater than or equal to 25 degrees Celsius
+console.log("Is temperature >= 25? I predict False.");
+console.log(temperature >= 25);
 
+// Test 9: Check if it's snowing
+console.log("Is it snowing? I predict False.");
+console.log(isRaining);
 
-let placesToVisit: string[] = [
-  "Tokyo",
-  "Rome",
-  "Bora Bora",
-  "New York",
-  "Machu Picchu",
-];
+// Test 10: Check if 'grape' is in the fruits array
+console.log("Is 'grape' in the fruits array? I predict False.");
+console.log(fruits.includes('grape'));
 
-// Print the array in its original order
-console.log("Original order:", placesToVisit);
-
-
-let SortedArray =[...placesToVisit].sort();
-
-
-console.log("Original order:", placesToVisit);
-
-console.log("Sorted Array order:", SortedArray);
-
-
-let SorrtedReverseArray = [...SortedArray].reverse();
-
-
-console.log("Reverse order:", SorrtedReverseArray);
-
-console.log("Sorted Array order:", SortedArray);
