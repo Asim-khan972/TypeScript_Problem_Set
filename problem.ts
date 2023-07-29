@@ -1,7 +1,8 @@
 
-console.log(`problem-16`)
-// Start with your program from Exercise 14. Add a print statement at the end of your program stating the name 
-// of the guest who can’t make it.
+console.log(`problem-17`)
+// • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+
+
 
 
 
@@ -18,15 +19,20 @@ let guestList: string[] = [
  /// here is new guset 
  let newGuest :string = 'Sunny Leone ';
 
-   /// filter the guest who is not comming 
-  guestList = guestList.filter((person)=>person !== notCommingGuest)
+//method 
+ //// we find index of notComming guest then make it replace it 
+ let indexofNotCommingGuest =  guestList.indexOf(notCommingGuest);
+console.log(indexofNotCommingGuest);
+guestList[2]=newGuest;
 
-  guestList.push(newGuest);
+// method 2
+                
+// guestList = guestList.map((person) => (person === notCommingGuest ? newGuest : person));s
+
+
 
 // Print invitations to each person
 guestList.forEach((person) => {
-  console.log(`Dear ${person},\nYou are invited to join us for dinner. The dinner will be a delightful gathering, and we would be honored to have your presence.\nLooking forward to
-   meeting you!\n\nBest regards,\n Asim khan`);
+  console.log(` ${person}`);
 });
 
-console.log(`Unfortunately, ${notCommingGuest} can't make it to the dinner.`);
