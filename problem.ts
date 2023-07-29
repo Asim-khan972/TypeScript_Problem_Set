@@ -6,5 +6,5 @@ console.log(`problem-5`)
 
 
 const personname = 'Albert Einstein';
-const Quote= "A person who never made a mistake never tried anything new.";
+const Quote= "A person who never made a mistake never tried anything  new.";
 console.log(` ${personname} once said, “${Quote}”`);
