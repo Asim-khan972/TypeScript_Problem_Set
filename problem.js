@@ -1,5 +1,8 @@
 console.log("problem-17");
-// • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+//Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
+// • Add one new guest to the beginning of your array.
+// • Add one new guest to the middle of your array. • Use append() to add one new guest to the end of your list. 
+// • Print a new set of invitation messages, one for each person in your list.
 // Array of people to invite to dinner
 var guestList = [
     "Mia Khalifa",
@@ -10,10 +13,16 @@ var guestList = [
 var notCommingGuest = 'Nora Fatihe';
 /// here is new guset 
 var newGuest = 'Sunny Leone ';
-//// we find index of notComming guest then make it replace it 
-var indexofNotCommingGuest = guestList.indexOf(notCommingGuest);
-console.log(indexofNotCommingGuest);
-guestList[2] = newGuest;
+//// new guest 
+var endGuest = "Angela White";
+var MiddleGuest = "Lana Rose ";
+// method 2
+guestList = guestList.map(function (person) { return (person === notCommingGuest ? newGuest : person); });
+guestList.unshift("Jhony Bhaiaa");
+guestList.push(endGuest);
+//// middle element into array 
+var middleIndex = Math.floor(guestList.length / 2);
+guestList.splice(middleIndex, 0, MiddleGuest);
 // Print invitations to each person
 guestList.forEach(function (person) {
     console.log(" ".concat(person));
