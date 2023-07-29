@@ -12,7 +12,7 @@ console.log(`problem-8`)
 // Addition: 5 + 3 = 8
 console.log(`-------------------------------------------------------`)
 const additionResult: number = 5 + 3;
-console.log("Addition Result:", additionResult);
+console.log("Addition Result:", additionResult );
 console.log(`-------------------------------------------------------`)
 
 // Subtraction: 10 - 2 = 8
