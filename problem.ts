@@ -1,20 +1,32 @@
 
-console.log(`problem-21`)
-// Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
-// • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
+console.log(`problem-22`)
+// Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
+// • If the person is less than 2 years old, print a message that the person is a baby.
 
-// • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
+// • If the person is at least 2 years old but less than 4, print a message that the person is a toddler.
 
-// Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
+// • If the person is at least 4 years old but less than 13, print a message that the person is a kid.
 
+// • If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
 
-// Alien Colors #2
-let alien_color: string = 'red';
+// • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
 
-if (alien_color === 'green') {
-  console.log("Congratulations! You just earned 5 points for shooting down a green alien.");
-} else if (alien_color === 'yellow') {
-  console.log("Congratulations! You just earned 10 points for shooting down a yellow alien.");
+// • If the person is age 65 or older, print a message that the person is an elder.
+
+// Set the value for the variable 'age'
+let age: number = 30;
+
+// If-else chain to determine the person's stage of life
+if (age < 2) {
+  console.log("The person is a baby.");
+} else if (age >= 2 && age < 4) {
+  console.log("The person is a toddler.");
+} else if (age >= 4 && age < 13) {
+  console.log("The person is a kid.");
+} else if (age >= 13 && age < 20) {
+  console.log("The person is a teenager.");
+} else if (age >= 20 && age < 65) {
+  console.log("The person is an adult.");
 } else {
-  console.log("Congratulations! You just earned 15 points for shooting down a red alien.");
+  console.log("The person is an elder.");
 }
